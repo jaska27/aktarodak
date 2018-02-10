@@ -1716,12 +1716,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     background: #ffffff;
     min-height: 800px;
     position: relative;
-    padding: 0;
-}
-
-#pricelist .intro-wrap {
-    padding: 15rem 0 21rem;
-    background: #ffffff;
+    padding: 15rem 0 15rem;
 }
 
 #pricelist .section-intro h3 {
@@ -1737,15 +1732,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #pricelist .pricelist-content {
     width: 100%;
     height: 100%;
+    margin: 0 auto;
 }
 
 /*responsive*/
-@media only screen and (max-width: 768px) {
-    #pricelist .intro-wrap {
-        padding: 12rem 0 21rem;
-    }
-}
-
 @media only screen and (max-width: 600px) {
     #pricelist .pricelist-content {
         padding: 0 0 12px;

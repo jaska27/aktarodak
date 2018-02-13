@@ -1535,7 +1535,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  * ------------------------------------------------------------------- */
 #portfolio {
     background: #111111;
-    min-height: 800px;
     position: relative;
     padding: 0;
 }
@@ -1649,11 +1648,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #portfolio .flex-direction-nav .flex-prev {
-    left: -50px;
+    left: -40px;
 }
 
 #portfolio .flex-direction-nav .flex-next {
-    right: -50px;
+    right: -40px;
     text-align: right;
 }
 

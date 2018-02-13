@@ -803,7 +803,7 @@ header .row {
 header .header-logo {
     position: absolute;
     left: 32px;
-    top: 42px;
+    top: 30px;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
@@ -1056,14 +1056,6 @@ header .header-logo a {
 }
 
 /* responsive: header section */
-@media only screen and (max-width: 768px) {
-    header .header-logo a {
-        width: 51px;
-        height: 24px;
-        background-size: 51px 24px;
-    }
-}
-
 @media only screen and (max-width: 400px) {
     #header-menu-trigger .header-menu-text {
         display: none;

@@ -255,7 +255,16 @@
 				goTopButton.fadeOut(fadeOutTime);
 			}
 		});
-	};	
+	};
+
+
+    /* Back to Top
+  * ------------------------------------------------------ */
+    var honeyPot = function() {
+        $(document).ready(function(){
+            $(".honeypot").hide();
+        });
+    };
 
   /* Initialize
 	* ------------------------------------------------------ */
@@ -269,6 +278,7 @@
 		ssIntroAnimation();		
 		ssContactForm();
 		ssBackToTop();
+        honeyPot();
 	})();
 
 })(jQuery);

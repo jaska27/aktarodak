@@ -7,6 +7,7 @@ if ($_POST) {
     $email = trim(stripslashes($_POST['contactEmail']));
     $phone = trim(stripslashes($_POST['contactPhone']));
     $contact_message = trim(stripslashes($_POST['contactMessage']));
+    $honey_pot = $_POST['contactHoneyPot'];
 
     if (strlen($name) < 2)
         $error['name'] = "Wpisz imię i nazwisko.";
@@ -21,6 +22,9 @@ if ($_POST) {
 
     if (strlen($contact_message) < 15)
         $error['message'] = "Wpisz wiadomość. Powinna mieć minimum 15 znaków.";
+
+    if ($honey_pot != '')
+        $error['honeyPot'] = "Jesteś spamerem, nieładnie...";
 
     $subject = "Formularz kontaktowy";
 
@@ -53,6 +57,7 @@ if ($_POST) {
         $response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
         $response .= (isset($error['phone'])) ? $error['phone'] . "<br /> \n" : null;
         $response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
+        $response .= (isset($error['honeyPot'])) ? $error['honeyPot'] . "<br /> \n" : null;
 
         echo $response;
     }

@@ -242,7 +242,7 @@
 	* ------------------------------------------------------ */
 	var ssAjaxChimp = function() {
 
-		$('#mc-form').ajaxChimp({
+		$('#contactForm').ajaxChimp({
 			language: 'es',
 		   url: cfg.mailChimpURL
 		});
@@ -302,7 +302,7 @@
 		ssAnimations();
 		ssIntroAnimation();		
 		ssContactForm();
-		//ssAjaxChimp();
+		ssAjaxChimp();
 		ssBackToTop();
 	})();
 

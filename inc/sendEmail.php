@@ -1,7 +1,5 @@
 ﻿<?php
-
 $siteOwnersEmail = 'kontakt@aktarodak.pl';
-
 
 if ($_POST) {
 
@@ -13,11 +11,13 @@ if ($_POST) {
     if (strlen($name) < 2)
         $error['name'] = "Wpisz imię i nazwisko.";
 
-    if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email))
-        $error['email'] = "Wpisany adres e-mail jest nieprawidłowy.";
+/*    if (!filter_var($email, FILTER_VALIDATE_EMAIL))
+        $error['email'] = "Wpisany adres e-mail jest nieprawidłowy.";*/
 
-    if (!preg_match('/^[0-9]{9}', $email))
-        $error['phone'] = "Numer telefonu powinien składać się z samych cyfr.";
+    if(strlen($phone) > 0){
+        if (!preg_match("/^\d{9}$/", $phone))
+            $error['phone'] = "Numer telefonu powinien składać się z 9 cyfr.";
+    }
 
     if (strlen($contact_message) < 15)
         $error['message'] = "Wpisz wiadomość. Powinna mieć minimum 15 znaków.";
@@ -51,6 +51,7 @@ if ($_POST) {
     } else {
         $response = (isset($error['name'])) ? $error['name'] . "<br /> \n" : null;
         $response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
+        $response .= (isset($error['phone'])) ? $error['phone'] . "<br /> \n" : null;
         $response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
 
         echo $response;

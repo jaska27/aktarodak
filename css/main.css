@@ -1722,9 +1722,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #pricelist .section-intro h3 {
     color: rgba(79, 79, 79, 0.5);
 }
+
 #pricelist .section-intro h1 {
     color: #000000;
 }
+
 #pricelist .section-intro .lead {
     color: rgba(79, 79, 79, 0.4);
 }
@@ -1735,16 +1737,103 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     margin: 0 auto;
 }
 
+#pricelist .pricelist {
+    list-style: none;
+    margin: 0;
+    padding: 20px 70px;
+}
+
+#pricelist .price-element {
+    background: #e9eaea;
+    height: 80px;
+    margin: 10px 0;
+    opacity: 0.8;
+    padding: 4px 25px;
+    width: 100%;
+}
+
+#pricelist .price-element:hover {
+    opacity: 1;
+}
+
+#pricelist .price {
+    border-radius: 100%;
+    cursor: default;
+    display: block;
+    float: left;
+    height: 56px;
+    line-height: 56px;
+    margin: 8px 10px 0 0;
+    text-align: center;
+    width: 56px;
+    background-color: #3cc2cc;
+    opacity: 0.5;
+    font-size: 17px;
+    color: #000000;
+}
+
+#pricelist .details {
+    color: rgba(79, 79, 79, 0.6);
+    display: block;
+    float: left;
+    height: 46px;
+    margin: 8px 0;
+    padding: 0px 10px;
+    line-height: 1.6;
+}
+
+#pricelist .price-element-title {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 2px 0 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#pricelist .price-element-description {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
 /*responsive*/
+@media only screen and (max-width: 700px) {
+    #pricelist .pricelist-content {
+        padding: 0 0 12px;
+    }
+    #pricelist .pricelist {
+        padding: 0px 50px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #pricelist .pricelist-content {
         padding: 0 0 12px;
+    }
+    #pricelist .pricelist {
+        padding: 0px 20px;
+    }
+    #pricelist .price-element {
+        padding: 0px 10px;
+    }
+    #pricelist .price {
+        margin: 12px 10px 0 0;
+    }
+    #pricelist .details {
+        float: none;
+        padding: 0px 5px;
     }
 }
 
 @media only screen and (max-width: 400px) {
     #pricelist .pricelist-content {
         padding: 0 0 0;
+    }
+    #pricelist .price-element {
+        height: 116px;
+    }
+    #pricelist .price {
+        margin: 30px 10px 0 0;
     }
 }
 

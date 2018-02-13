@@ -302,7 +302,7 @@
 		ssAnimations();
 		ssIntroAnimation();		
 		ssContactForm();
-		ssAjaxChimp();
+		//ssAjaxChimp();
 		ssBackToTop();
 	})();
 

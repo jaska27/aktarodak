@@ -11,8 +11,8 @@ if ($_POST) {
     if (strlen($name) < 2)
         $error['name'] = "Wpisz imię i nazwisko.";
 
-/*    if (!filter_var($email, FILTER_VALIDATE_EMAIL))
-        $error['email'] = "Wpisany adres e-mail jest nieprawidłowy.";*/
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL))
+        $error['email'] = "Wpisany adres e-mail jest nieprawidłowy.";
 
     if(strlen($phone) > 0){
         if (!preg_match("/^\d{9}$/", $phone))

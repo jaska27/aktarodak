@@ -555,7 +555,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     border: none;
-    -webkit-text-fill-color: #fabc5a;
+    -webkit-text-fill-color: #3cc2cc;
     transition: background-color 5000s ease-in-out 0s;
 }
 

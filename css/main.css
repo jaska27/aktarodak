@@ -1887,6 +1887,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     margin-bottom: 4.2rem;
 }
 
+.contact-info .phone p {
+margin-bottom: 0;
+}
+
 /* contact form */
 #contact form {
     margin-top: 0;

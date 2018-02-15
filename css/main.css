@@ -1459,10 +1459,12 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #services .services-list .service-item a {
     color: #3cc2cc;
+    text-decoration: underline;
 }
 
 #services .services-list .service-item a:hover {
     color: #3cc2cc;
+    font-weight: bold;
 }
 
 #services .services-list .icon {

@@ -2296,32 +2296,3 @@ footer h4.h05::after {
         display: none;
     }
 }
-
-/* cookies */
-.cc-window {
-    font-size: 1.4rem !important;
-}
-
-/* cookies page */
-#cookies {
-    background: #e9eaea;
-    font-size: 1.6rem;
-    line-height: 3rem;
-    color: #353535;
-    margin: 0;
-    padding: 15rem 0 15rem;
-}
-
-#cookies .section-intro h3 {
-    color: rgba(79, 79, 79, 0.5);
-}
-
-#cookies .cookies-content {
-    color: rgba(79, 79, 79, 0.5);
-    text-align: justify-all;
-}
-
-#cookies .lead {
-    color: rgba(79, 79, 79, 0.4);
-}
-

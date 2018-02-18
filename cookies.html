@@ -17,32 +17,7 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-    <script>
-        window.addEventListener("load", function(){
-            window.cookieconsent.initialise({
-                "palette": {
-                    "popup": {
-                        "background": "#000000",
-                        "text": "#ffffff"
-                    },
-                    "button": {
-                        "background": "#3cc2cc",
-                        "text": "#000000"
-                    }
-                },
-                "content": {
-                    "message": "Ta strona używa plików cookies i podobnych technologii, dzięki którym serwis działa lepiej.",
-                    "dismiss": "Ok, rozumiem",
-                    "link": "Dowiedz się więcej",
-                    "href": "https://aktarodak.pl/cookies"
-                }
-            })});
-    </script>
 </head>
-
-<body id="top">
 
 <header>
 
@@ -54,13 +29,39 @@
 
 <section id="cookies">
 
-    <div class="intro-wrap">
-
-        <div class="row narrow section-intro with-bottom-sep">
+        <div class="row section-intro">
             <div class="col-twelve">
-                <h3>Polityka cookies</h3>
-                <h1>Zobacz nasze ostatnie projekty</h1>
+                <h3>Cookies</h3>
+                <h1>Polityka plików Cookies</h1>
+
+                <p class="lead">
+                    Niniejsza Polityka dotycząca plików cookies (ciasteczek)
+                    odnosi się do ciasteczek i innych podobnych technologii na stronie
+                    internetowej aktarodak.pl należącej do AktaRodak Żaneta Rodak,
+                    zwaną dalej „AktaRodak”. Przez używanie aktarodak.pl wyrażasz zgodę
+                    na używanie ciasteczek i innych podobnych technologii zgodnie z tą
+                    Polityką plików Cookies. Jeżeli nie zgadzasz się na używanie przez nas
+                    ciasteczek i/lub innych podobnych technologii, powinieneś zmienić ustawienia
+                    swojej przeglądarki w odpowiedni sposób lub zrezygnować z używania aktarodak.pl.
+                </p>
             </div>
+        </div>
+
+    <div class="row cookies-content">
+
+        <div>
+            <h4>Pytanie</h4>
+            <p>Odpowiedź</p>
+        </div>
+
+        <div>
+            <h4>Pytanie</h4>
+            <p>Odpowiedź</p>
+        </div>
+
+        <div>
+            <h4>Pytanie</h4>
+            <p>Odpowiedź</p>
         </div>
 
     </div>
@@ -97,7 +98,29 @@
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+    window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#000000",
+                    "text": "#ffffff"
+                },
+                "button": {
+                    "background": "#3cc2cc",
+                    "text": "#000000"
+                }
+            },
+            "content": {
+                "message": "Ta strona używa plików cookies i podobnych technologii, dzięki którym serwis działa lepiej.",
+                "dismiss": "Ok, rozumiem",
+                "link": "Dowiedz się więcej",
+                "href": "https://aktarodak.pl/cookies"
+            }
+        })});
+</script>
 </body>
 
 </html>

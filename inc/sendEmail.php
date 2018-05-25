@@ -7,6 +7,7 @@ if ($_POST) {
     $email = trim(stripslashes($_POST['contactEmail']));
     $phone = trim(stripslashes($_POST['contactPhone']));
     $contact_message = trim(stripslashes($_POST['contactMessage']));
+    $permission = $_POST['contactPermission'];
     $honey_pot = $_POST['contactHoneyPot'];
 
     if (strlen($name) < 2)
@@ -22,6 +23,9 @@ if ($_POST) {
 
     if (strlen($contact_message) < 15)
         $error['message'] = "Wpisz wiadomość. Powinna mieć minimum 15 znaków.";
+
+    if ($permission != 'on')
+        $error['contactPermission'] = "Zgoda na przetwarzanie danych osobowych jest wymagana.";
 
     if ($honey_pot != '')
         $error['honeyPot'] = "Jesteś spamerem, nieładnie...";
@@ -57,6 +61,7 @@ if ($_POST) {
         $response .= (isset($error['email'])) ? $error['email'] . "<br /> \n" : null;
         $response .= (isset($error['phone'])) ? $error['phone'] . "<br /> \n" : null;
         $response .= (isset($error['message'])) ? $error['message'] . "<br />" : null;
+        $response .= (isset($error['contactPermission'])) ? $error['contactPermission'] . "<br /> \n" : null;
         $response .= (isset($error['honeyPot'])) ? $error['honeyPot'] . "<br /> \n" : null;
 
         echo $response;

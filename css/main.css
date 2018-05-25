@@ -1793,6 +1793,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     #pricelist .pricelist-content {
         padding: 0 0 12px;
     }
+
     #pricelist .pricelist {
         padding: 0px 50px;
     }
@@ -1802,15 +1803,19 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     #pricelist .pricelist-content {
         padding: 0 0 12px;
     }
+
     #pricelist .pricelist {
         padding: 0px 20px;
     }
+
     #pricelist .price-element {
         padding: 0px 10px;
     }
+
     #pricelist .price {
         margin: 12px 10px 0 0;
     }
+
     #pricelist .details {
         float: none;
         padding: 0px 5px;
@@ -1821,9 +1826,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
     #pricelist .pricelist-content {
         padding: 0 0 0;
     }
+
     #pricelist .price-element {
         height: 116px;
     }
+
     #pricelist .price {
         margin: 30px 10px 0 0;
     }
@@ -1890,7 +1897,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 .contact-info .phone p {
-margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 /* contact form */
@@ -1916,16 +1923,23 @@ margin-bottom: 0;
     font-family: "montserrat-bold", sans-serif;
     font-size: 1rem;
     line-height: 1.4;
-    position: absolute;
     bottom: 1.5rem;
     right: 0;
     text-transform: uppercase;
     letter-spacing: .05rem;
     padding: .6rem 2rem .6rem 2rem;
     margin: 0;
-    color: #000000;
+    position: absolute;
     background: #3cc2cc;
-    border-radius: 3px;
+    opacity: 0.7;
+    color: #ffffff;
+}
+
+#contact form .form-field label.checkbox {
+    position: relative;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    text-transform: none;
 }
 
 #contact form .form-field label::after {
